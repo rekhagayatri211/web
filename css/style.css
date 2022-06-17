@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  display: inline;
+}
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: white; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: orange;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: orange;
+}
+.btn-nav {
+  padding: 7px 10px;
+  box-shadow: 2px 2px 10px lightgrey;
+  color: orange;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  border-radius: 18px;
+  font-size: 0.9rem;
+
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: orange;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 1.5rem;
+  }
+  .jumbotron p {
+    font-size: 1rem;
+  }
+}
+/*End Header*/
+
+
+/*Main*/
+
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+article h2 {
+  color: orange;
+  text-align: center;
+}
+
+article p {
+  text-indent: 1.2rem;
+}
+.featured-image:hover {
+  transition: 0.7s;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+.mb-10 {
+  margin-bottom: 30px;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 3px 3px 20px  lightgrey;
+  padding: 20px 50px;
+  margin: 0 0 20px 0;
+}
+.flex {
+  display: flex;
+}
+.fg {
+  flex-grow: 1;
+}
+.featured-image {
+  transition: 0.7s;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  padding: 10px;
+}
+/*End Main*/
+
+
+
+/*Footer*/
+input[type=text],
+input[type=email],
+textarea,
+select {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+input[type="text"]:focus, 
+input[type="email"]:focus,
+select:focus {
+    box-shadow: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 5px orange !important;
+    outline: 0 none !important;
+}
+.mb-3 {
+  margin-bottom: 13px;
+}
+#form button {
+  width: 100%;
+  border: 0;
+  padding: 13px;
+}
+
+.height {
+    height: 10px;
+}
+      
